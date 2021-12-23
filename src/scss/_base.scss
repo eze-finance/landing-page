@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+.mixed-chart2 {
+  height: 279px;
+}
+#mainScroll{
+  background:rgba(255, 255, 255, 0.007);
+  transition: all 0.3s ease-in-out;
+  padding-top: 10px;
+  backdrop-filter: blur(44px);
+}
+// #mainScroll.activeHeader{
+//   background:#000;
+//   transition: all 0.3s ease-in-out;
+//   padding-top: 3px;
+// }
+.mixed-chart3 {
+  height: 100px;
+}
+.animatecss{
+  animation: slidein 7s infinite;
+}
+.animatecss1{
+  animation: slidein 5s infinite;
+}
+@keyframes slidein {
+  0% {
+    width: 1000px;
+    height: 900px;
+  }
+
+  50% {
+    width: 800px;
+    height: 1200px;
+  }
+  100% {
+    width: 1000px;
+    height: 900px;
+  }
+}
+
+.shade2 {
+  position: absolute;
+  left: -20%;
+  top: 10%;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  width: 600px;
+  height: 600px;
+  border-radius: 1000px;
+  background-image: radial-gradient(
+    36.67% 9.68% at 67.26% 8.27%,
+    rgba(50, 82, 163, 0.58) 0%,
+    rgba(18, 52, 140, 0.58) 95.78%
+  );
+  opacity: 0.55;
+  filter: blur(100px);
+}
+.shade {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 10%;
+  bottom: 10%;
+  transform: rotate(45deg);
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  border-radius: 1000px;
+  background-image: radial-gradient(
+    36.67% 9.68% at 67.26% 8.27%,
+    rgba(42, 123, 135, 1) 0%,
+    rgba(39, 121, 124, 1) 95.78%
+  );
+  opacity: 0.55;
+  filter: blur(100px);
+}
+
+.closeIcons {
+  position: absolute !important;
+  top: 9px;
+  right: 10px;
+}
+img {
+  max-width: 100%;
+}
+.newfont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // font-family: "Racing Sans One", cursive !important;
+  span {
+    background: -webkit-linear-gradient(#2eb1f3, #42e8e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px !important;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+}
+.blurred {
+  filter: blur(5px);
+}
+.blurredText {
+  .apexcharts-legend.apx-legend-position-right {
+    filter: blur(5px);
+  }
+}
+.slick-prev {
+  z-index: 99;
+  left: -5px;
+}
+.slick-next {
+  right: -2px;
+  z-index: 99;
+}

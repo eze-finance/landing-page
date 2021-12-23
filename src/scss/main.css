@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mixed-chart2 {
+  height: 279px;
+}
+
+#mainScroll {
+  background: rgba(255, 255, 255, 0.007);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding-top: 10px;
+  -webkit-backdrop-filter: blur(44px);
+          backdrop-filter: blur(44px);
+}
+
+.mixed-chart3 {
+  height: 100px;
+}
+
+.animatecss {
+  -webkit-animation: slidein 7s infinite;
+          animation: slidein 7s infinite;
+}
+
+.animatecss1 {
+  -webkit-animation: slidein 5s infinite;
+          animation: slidein 5s infinite;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    width: 1000px;
+    height: 900px;
+  }
+  50% {
+    width: 800px;
+    height: 1200px;
+  }
+  100% {
+    width: 1000px;
+    height: 900px;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    width: 1000px;
+    height: 900px;
+  }
+  50% {
+    width: 800px;
+    height: 1200px;
+  }
+  100% {
+    width: 1000px;
+    height: 900px;
+  }
+}
+
+.shade2 {
+  position: absolute;
+  left: -20%;
+  top: 10%;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  width: 600px;
+  height: 600px;
+  border-radius: 1000px;
+  background-image: radial-gradient(36.67% 9.68% at 67.26% 8.27%, rgba(50, 82, 163, 0.58) 0%, rgba(18, 52, 140, 0.58) 95.78%);
+  opacity: 0.55;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+.shade {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 10%;
+  bottom: 10%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  border-radius: 1000px;
+  background-image: radial-gradient(36.67% 9.68% at 67.26% 8.27%, #2a7b87 0%, #27797c 95.78%);
+  opacity: 0.55;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+.closeIcons {
+  position: absolute !important;
+  top: 9px;
+  right: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.newfont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newfont span {
+  background: -webkit-linear-gradient(#2eb1f3, #42e8e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px !important;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.blurred {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.blurredText .apexcharts-legend.apx-legend-position-right {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.slick-prev {
+  z-index: 99;
+  left: -5px;
+}
+
+.slick-next {
+  right: -2px;
+  z-index: 99;
+}
+/*# sourceMappingURL=main.css.map */
