@@ -10,6 +10,18 @@ import {
 } from "@material-ui/core";
 import {} from "react-feather";
 const useStyles = makeStyles((theme) => ({
+	boxOrder12: {
+		order: 1,
+		[theme.breakpoints.down("xs")]: {
+			order: 2,
+		},
+	},
+	boxOrder21: {
+		order: 2,
+		[theme.breakpoints.down("xs")]: {
+			order: 1,
+		},
+	},
 	bannerBox: {
 		position: "relative",
 		backgroundColor: "#000",
@@ -129,13 +141,15 @@ export default function DECENTRALIZED() {
 
 	return (
 		<Box className={classes.bannerBox}>
-			<img
-				src="/images/home2/coins.png"
-				width="100%"
-				className={classes.globe}
-				alt=""
-			/>
-			<Container maxWidth="lg">
+			<Box className={`${classes.boxOrder21}`}>
+				<img
+					src="/images/home2/coins.png"
+					width="100%"
+					className={classes.globe}
+					alt=""
+				/>
+			</Box>
+			<Container maxWidth="lg" className={`${classes.boxOrder12}`}>
 				<Box className={classes.textbox}>
 					<Box>
 						<Grid spacing={5} container alignItems="center">

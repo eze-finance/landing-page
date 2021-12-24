@@ -157,7 +157,7 @@ export default function DataLine(props) {
 							data-wow-delay="0.1s"
 						>
 							<Typography variant="h2">Treasury Balance</Typography>
-							<Typography variant="h4">{/* 763,768,941 */}0</Typography>
+							<Typography variant="h4">{/* 763,768,941 */}$0</Typography>
 						</Box>
 						<Box className={classes.lineBox}></Box>
 						<Box
