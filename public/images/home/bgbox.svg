@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 591" width="509" height="591">
+	<title>Group 2722</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="254.5" y1="-127.1" x2="254.5" y2="591">
+			<stop offset="0" stop-color="#000000" stop-opacity=".1" />
+			<stop offset="1" stop-color="#2f1331"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.s0 { opacity: .7;fill: none;stroke: #564768;stroke-width: 2 } 
+		.s1 { fill: url(#grd1) } 
+	</style>
+	<g id="Group 2722" style="opacity: .8">
+		<path id="Rectangle 621" class="s0" d="m2 42c0-23.2 18.8-42 42-42h425c23.2 0 42 18.8 42 42v488c0 23.2-18.8 42-42 42h-425c-23.2 0-42-18.8-42-42v-488z" />
+		<path id="Rectangle 622" class="s1" d="m0 42c0-23.2 18.8-42 42-42h425c23.2 0 42 18.8 42 42v507c0 23.2-18.8 42-42 42h-425c-23.2 0-42-18.8-42-42v-507z" />
+	</g>
+</svg>
