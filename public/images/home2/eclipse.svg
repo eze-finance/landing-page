@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 950" width="1130" height="950">
+	<title>Ellipse 135</title>
+	<defs>
+		<radialGradient id="grd1" gradientUnits="userSpaceOnUse"  cx="549.3" cy="-122.1" r="398.5">
+			<stop offset="0" stop-color="#368af2" stop-opacity=".6" />
+			<stop offset="1" stop-color="#0b1a2d"  />
+		</radialGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.s0 { opacity: .3;fill: url(#grd1) } 
+	</style>
+	<path id="Ellipse 135" class="s0" d="m13.4 327.31c66.8-249.3 367.34-384.75 672.35-303.02c305.01 81.73 497.56 349.3 430.76 598.6c-66.8 249.3-367.34 384.75-672.35 303.02c-305.01-81.73-497.56-349.3-430.76-598.6z" />
+</svg>
