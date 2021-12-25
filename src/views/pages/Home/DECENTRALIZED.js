@@ -141,7 +141,7 @@ export default function DECENTRALIZED() {
 
 	return (
 		<Box className={classes.bannerBox}>
-			<Box className={`${classes.boxOrder21}`}>
+			<Box component="div" sx={{ display: { xs: "none", sm: "block" } }}>
 				<img
 					src="/images/home2/coins.png"
 					width="100%"
@@ -149,13 +149,23 @@ export default function DECENTRALIZED() {
 					alt=""
 				/>
 			</Box>
-			<Container maxWidth="lg" className={`${classes.boxOrder12}`}>
+			<Container maxWidth="lg">
 				<Box className={classes.textbox}>
 					<Box>
 						<Grid spacing={5} container alignItems="center">
 							<Grid item xs={12} sm={12} md={6}>
 								<Box>
-									{" "}
+									<Box
+										component="div"
+										sx={{ display: { xs: "block", sm: "none" } }}
+									>
+										<img
+											src="/images/home2/coins.png"
+											width="100%"
+											className={classes.globe}
+											alt=""
+										/>
+									</Box>{" "}
 									<Typography
 										variant="h1"
 										className="wow slideInRight"

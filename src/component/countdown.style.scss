@@ -1,9 +1,10 @@
 .countdown .card {
 //   background: change-color($black, $lightness: 20%);
-  display: inline-block;
+  display: block;
   margin: 14px;
   min-width: 100px;
   padding: 10px;
+  border: 1px solid red;;
   
 //   border: 1px solid red;
   .countdown-value {
@@ -18,11 +19,29 @@
     text-align: center;
   }
 }
+
+.countdown-value {
+    color: white;
+    font-size: 2rem;
+    // margin-bottom: 10px;
+    text-align: center;
+  }
+
+.countdown-unit {
+text-transform: capitalize;
+color: rgba(255,234,132,1);
+text-align: center;
+}
+
 .text-white{
     color: white;
     text-align: center;
     font-weight: 600;
     margin: 0;
+}
+
+.br{
+    border: 1px solid red;
 }
 
 

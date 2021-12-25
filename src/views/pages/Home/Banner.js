@@ -122,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
 		"& h1": {
 			fontSize: "58px",
 			fontWeight: "700",
-			margin: "40px 0 20px",
+			margin: "-80px 0 20px",
 			background:
 				"linear-gradient(90deg, rgba(213,171,32,1) 3%, rgba(255,234,132,1) 49%, rgba(213,171,32,1) 93%)",
 			WebkitBackgroundClip: "text",
@@ -236,12 +236,12 @@ export default function Banner(props) {
 							lg={6}
 							className={classes.gridflex}
 						>
-							<Box>
+							<div>
 								<Countdown
 									countdownTimer={countdownTimer}
 									unixEndDate={countdownSettings.unixEndDate}
 								/>
-							</Box>
+							</div>
 							<Box className={classes.textbox}>
 								<Typography
 									variant="h1"
