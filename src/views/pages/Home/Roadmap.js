@@ -147,7 +147,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	lineH: { marginTop: "35px" },
 	comingSoon: {
-		color: "#efea69",
+		color: "rgba(255,234,132,1)",
 		fontWeight: 800,
 	},
 }));

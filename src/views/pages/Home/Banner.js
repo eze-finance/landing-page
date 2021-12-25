@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import moment from "moment";
 import {
 	Grid,
 	Box,
@@ -8,6 +9,7 @@ import {
 	Button,
 	Theme,
 } from "@material-ui/core";
+import Countdown from "../../../component/Countdown";
 
 const useStyles = makeStyles((theme) => ({
 	bannerBox: {
@@ -99,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	textbox: {
 		position: "relative",
-		marginTop: "90px",
+		marginTop: "0",
 		textAlign: "center",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "-80px",
@@ -151,6 +153,61 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Banner(props) {
 	const classes = useStyles();
+	const initialCountdownSettings = {
+		dateValue: "01-30-2022",
+		timeValue: "11:59",
+		ampmValue: "pm",
+		unixEndDate: "1643587140",
+	};
+	const initialCountdownTimer = {
+		days: "",
+		hours: "",
+		minutes: "",
+		seconds: "",
+	};
+	const [countdownSettings, setCountdownSettings] = useState({
+		...initialCountdownSettings,
+	});
+	const [countdownTimer, setCountdownTimer] = useState({
+		...initialCountdownTimer,
+	});
+
+	useEffect(() => {
+		let timer = null;
+
+		if (countdownSettings.unixEndDate) {
+			timer = setInterval(() => playTimer(countdownSettings.unixEndDate), 1000);
+		}
+		return () => {
+			clearInterval(timer);
+			timer = null;
+		};
+	}, [countdownSettings.unixEndDate]);
+
+	useEffect(() => {
+		setCountdownSettings({
+			...initialCountdownSettings,
+		});
+	}, [true]);
+
+	function playTimer(currentUnixEndDate) {
+		const distance = currentUnixEndDate - moment().format("X");
+
+		if (distance > 0) {
+			setCountdownTimer((prevCountdownTimer) => {
+				return {
+					...prevCountdownTimer,
+					days: parseInt(distance / (60 * 60 * 24), 10),
+					hours: parseInt((distance % (60 * 60 * 24)) / (60 * 60), 10),
+					mins: parseInt((distance % (60 * 60)) / 60, 10),
+					secs: parseInt(distance % 60, 10),
+				};
+			});
+		} else {
+			setCountdownSettings({ ...initialCountdownSettings });
+			setCountdownTimer({ ...initialCountdownTimer });
+		}
+	}
 	return (
 		<>
 			<Box className={classes.bannerBox}>
@@ -179,6 +236,12 @@ export default function Banner(props) {
 							lg={6}
 							className={classes.gridflex}
 						>
+							<Box>
+								<Countdown
+									countdownTimer={countdownTimer}
+									unixEndDate={countdownSettings.unixEndDate}
+								/>
+							</Box>
 							<Box className={classes.textbox}>
 								<Typography
 									variant="h1"
