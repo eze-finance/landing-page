@@ -105,6 +105,7 @@ const useStyles = makeStyles((theme) => ({
 		position: "relative",
 		width: "20px",
 		minWidth: "20px",
+		margin: "-100px",
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
 			height: "40px",
