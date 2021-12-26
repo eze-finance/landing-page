@@ -18,6 +18,9 @@ import { FaRedditAlien } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import {} from "react-feather";
 const useStyles = makeStyles((theme) => ({
+	noUnderline: {
+		textDecoration: "none",
+	},
 	lowerFooter: {
 		borderTop: "1px solid #503D5D",
 		padding: "15px 0 10px",
@@ -125,13 +128,19 @@ export default function Liquidity() {
 									<Link href="#">Github</Link>
 								</li> */}
 								<li>
-									<Link to="/coming-soon">Audit</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Audit
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Bounty</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Bounty
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Jobs </Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Jobs{" "}
+									</Link>
 								</li>
 							</ul>
 						</Box>
@@ -142,19 +151,29 @@ export default function Liquidity() {
 							<Typography variant="h5">Products</Typography>
 							<ul class="footer_text">
 								<li>
-									<Link to="/">Staking</Link>
+									<Link to="/" className={classes.noUnderline}>
+										Staking
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Bonds</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Bonds
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Swap</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Swap
+									</Link>
 								</li>
 								<li>
-									<Link to="/clique">EZE CLique</Link>
+									<Link to="/clique" className={classes.noUnderline}>
+										EZE CLique
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">EZE Live</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										EZE Live
+									</Link>
 								</li>
 							</ul>
 						</Box>
@@ -166,16 +185,24 @@ export default function Liquidity() {
 
 							<ul class="footer_text">
 								<li>
-									<Link to="/coming-soon">Help Center</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Help Center
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Terms of Service</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Terms of Service
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Privacy Policy</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Privacy Policy
+									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon">Contact us</Link>
+									<Link to="/coming-soon" className={classes.noUnderline}>
+										Contact us
+									</Link>
 								</li>
 							</ul>
 						</Box>
