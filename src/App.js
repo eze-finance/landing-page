@@ -1,16 +1,16 @@
 import React, { Suspense, Fragment } from "react";
-import { Router, Switch, Route, HashRouter } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 import { routes } from "src/routes";
 import { createBrowserHistory } from "history";
-import AuthContext from "src/context/Auth";
+// import AuthContext from "src/context/Auth";
 import PageLoading from "src/component/PageLoading";
-import AuthGuard from "src/component/AuthGuard";
+// import AuthGuard from "src/component/AuthGuard";
 import { ThemeProvider } from "@material-ui/core";
 import { createTheme } from "src/theme";
 // import AnimatedCursor from "react-animated-cursor"
-const history = createBrowserHistory();
+// const history = createBrowserHistory();
 
 function App() {
 	const theme = createTheme();

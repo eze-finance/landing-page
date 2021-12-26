@@ -6,8 +6,6 @@ import {
 	Container,
 	Typography,
 	makeStyles,
-	Button,
-	Theme,
 } from "@material-ui/core";
 import Countdown from "../../../component/Countdown";
 

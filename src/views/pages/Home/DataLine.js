@@ -1,6 +1,6 @@
 import React from "react";
 import {
-	Grid,
+	// Grid,
 	Box,
 	Container,
 	Typography,

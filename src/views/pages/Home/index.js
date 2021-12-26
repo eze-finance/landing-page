@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Page from "src/component/Page";
 import Banner from "./Banner";
 import DECENTRALIZED from "./DECENTRALIZED";
-import Tokenomics from "./Tokenomics";
+// import Tokenomics from "./Tokenomics";
 import Roadmap from "./Roadmap";
 import Unique from "./Unique";
 import Clique from "./Clique";
 import DataLine from "./DataLine";
 import { makeStyles } from "@material-ui/core";
-import Team from "./Team";
+// import Team from "./Team";
 import TrandingPlatform from "./TrandingPlatform";
 import TopBar from "src/layouts/HomeLayout/TopBar";
 const useStyles = makeStyles((theme) => ({
@@ -122,9 +122,12 @@ function Home({}) {
 		staking: useRef(null),
 		clique: useRef(null),
 		lite: useRef(null),
-
 		team: useRef(null),
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 
 	return (
 		<Page title="EZE">
