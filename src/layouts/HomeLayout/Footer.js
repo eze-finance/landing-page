@@ -127,13 +127,13 @@ export default function Liquidity() {
 									<Link href="#">Github</Link>
 								</li> */}
 								<li>
-									<Link href="/coming-soon">Audit</Link>
+									<Link to="/coming-soon">Audit</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Bounty</Link>
+									<Link to="/coming-soon">Bounty</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Jobs </Link>
+									<Link to="/coming-soon">Jobs </Link>
 								</li>
 							</ul>
 						</Box>
@@ -144,19 +144,19 @@ export default function Liquidity() {
 							<Typography variant="h5">Products</Typography>
 							<ul class="footer_text">
 								<li>
-									<Link href="/">Staking</Link>
+									<Link to="/">Staking</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Bonds</Link>
+									<Link to="/coming-soon">Bonds</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Swap</Link>
+									<Link to="/coming-soon">Swap</Link>
 								</li>
 								<li>
-									<Link href="/clique">EZE CLique</Link>
+									<Link to="/clique">EZE CLique</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">EZE Live</Link>
+									<Link to="/coming-soon">EZE Live</Link>
 								</li>
 							</ul>
 						</Box>
@@ -168,16 +168,16 @@ export default function Liquidity() {
 
 							<ul class="footer_text">
 								<li>
-									<Link href="/coming-soon">Help Center</Link>
+									<Link to="/coming-soon">Help Center</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Terms of Service</Link>
+									<Link to="/coming-soon">Terms of Service</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Privacy Policy</Link>
+									<Link to="/coming-soon">Privacy Policy</Link>
 								</li>
 								<li>
-									<Link href="/coming-soon">Contact us</Link>
+									<Link to="/coming-soon">Contact us</Link>
 								</li>
 							</ul>
 						</Box>
