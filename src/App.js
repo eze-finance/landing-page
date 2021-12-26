@@ -1,5 +1,5 @@
 import React, { Suspense, Fragment } from "react";
-import { Router, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route, HashRouter } from "react-router-dom";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import MomentUtils from "@date-io/moment";
 import { routes } from "src/routes";
@@ -13,19 +13,18 @@ import { createTheme } from "src/theme";
 const history = createBrowserHistory();
 
 function App() {
-  const theme = createTheme();
-  console.log(theme);
-  return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
-        <MuiPickersUtilsProvider utils={MomentUtils}>
-
-          <Router history={history}>
-            <RenderRoutes data={routes} />
-          </Router>
-
-        </MuiPickersUtilsProvider>
-        {/* <AnimatedCursor
+	const theme = createTheme();
+	console.log(theme);
+	return (
+		<div className="App">
+			<ThemeProvider theme={theme}>
+				<MuiPickersUtilsProvider utils={MomentUtils}>
+					{/* <Router history={history}> */}
+					<HashRouter>
+						<RenderRoutes data={routes} />
+					</HashRouter>
+				</MuiPickersUtilsProvider>
+				{/* <AnimatedCursor
         innerSize={10}
         outerSize={15}
         color='193, 11, 111'
@@ -34,41 +33,39 @@ function App() {
         outerScale={5}
         
          /> */}
-      </ThemeProvider>
-    </div>
-  );
+			</ThemeProvider>
+		</div>
+	);
 }
 
 export default App;
 
 function RenderRoutes(props) {
-  return (
-    <Suspense fallback={<PageLoading />}>
-      <Switch>
-        {props.data.map((route, i) => {
-          const Component = route.component;
+	return (
+		<Suspense fallback={<PageLoading />}>
+			<Switch>
+				{props.data.map((route, i) => {
+					const Component = route.component;
 
-          const Layout = route.layout || Fragment;
-          return (
-            <Route
-              exact={route.exact}
-              key={i}
-              path={route.path}
-              render={(props) => (
-
-                <Layout {...props}>
-                  {route.routes ? (
-                    <RenderRoutes data={route.routes} />
-                  ) : (
-                    <Component {...props} />
-                  )}
-                </Layout>
-
-              )}
-            />
-          );
-        })}
-      </Switch>
-    </Suspense>
-  );
+					const Layout = route.layout || Fragment;
+					return (
+						<Route
+							exact={route.exact}
+							key={i}
+							path={route.path}
+							render={(props) => (
+								<Layout {...props}>
+									{route.routes ? (
+										<RenderRoutes data={route.routes} />
+									) : (
+										<Component {...props} />
+									)}
+								</Layout>
+							)}
+						/>
+					);
+				})}
+			</Switch>
+		</Suspense>
+	);
 }
