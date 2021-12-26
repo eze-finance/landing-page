@@ -6,15 +6,13 @@ import {
 	Container,
 	Typography,
 	makeStyles,
-	Theme,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { FaTwitter, FaYoutube } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
 import { FaRedditAlien } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";

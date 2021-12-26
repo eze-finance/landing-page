@@ -6,7 +6,6 @@ import {
 	IconButton,
 	Drawer,
 	Grid,
-	MenuItem,
 	Box,
 	Container,
 } from "@material-ui/core";
@@ -154,7 +153,7 @@ export default function Header({ buttonClick }) {
 		mainHeader,
 	} = useStyles();
 	const history = useHistory();
-	console.log(history.location);
+	// console.log(history.location);
 
 	const [state, setState] = useState({
 		mobileView: false,
@@ -172,8 +171,6 @@ export default function Header({ buttonClick }) {
 		setResponsiveness();
 		window.addEventListener("resize", () => setResponsiveness());
 	}, []);
-
-	const classes = useStyles();
 
 	const displayDesktop = () => {
 		return (
