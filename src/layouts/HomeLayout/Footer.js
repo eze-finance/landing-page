@@ -2,13 +2,13 @@ import React from "react";
 import {
 	Grid,
 	Box,
-	Link,
 	Button,
 	Container,
 	Typography,
 	makeStyles,
 	Theme,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
