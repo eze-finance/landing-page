@@ -16,7 +16,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
-import { AiOutlineGooglePlus } from "react-icons/ai";
+import { FaRedditAlien } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import {} from "react-feather";
 const useStyles = makeStyles((theme) => ({
@@ -214,26 +214,35 @@ export default function Liquidity() {
 							/>
 						</Box>
 						<Box align="left" mt={3} mb={3} className="follow">
-							<Link href="#" target="_blank">
+							{/* <Link href="#" target="_blank">
 								<FaFacebookF />
-							</Link>
-							<Link href="#" target="_blank">
+							</Link> */}
+							<Link
+								href="https://www.linkedin.com/in/eze-finance-580a17219/"
+								target="_blank"
+							>
 								<FaLinkedinIn />
 							</Link>
-							<Link href="#" target="_blank">
+							<Link href="https://twitter.com/eze_finance" target="_blank">
 								<FaTwitter />
 							</Link>
-							<Link href="#" target="_blank">
+							<Link href="https://t.me/ezefinance" target="_blank">
 								<FaTelegramPlane />
 							</Link>
-							<Link href="#" target="_blank">
+							{/* <Link href="#" target="_blank">
 								<FaYoutube />
-							</Link>
-							<Link href="#" target="_blank">
+							</Link> */}
+							<Link href="https://medium.com/@ezefinance" target="_blank">
 								<FaMediumM />
 							</Link>
-							<Link href="#" target="_blank">
+							<Link
+								href="https://www.instagram.com/eze.finance"
+								target="_blank"
+							>
 								<AiOutlineInstagram />
+							</Link>
+							<Link href="https://www.reddit.com/r/EZEfinance" target="_blank">
+								<FaRedditAlien />
 							</Link>
 							{/* <Link href="#" target="_blank">
 								<img src="/images/icongit.svg" alt="" />

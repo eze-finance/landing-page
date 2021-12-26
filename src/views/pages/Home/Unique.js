@@ -106,7 +106,7 @@ export default function NFTMarketplace() {
 										a great stepping stone to bring the crypto community
 										together.
 									</Typography>
-									<Button
+									{/* <Button
 										variant="contained"
 										color="secondary"
 										size="large"
@@ -114,7 +114,7 @@ export default function NFTMarketplace() {
 										to="/clique"
 									>
 										Read More
-									</Button>
+									</Button> */}
 								</Box>
 							</Grid>
 							<Grid

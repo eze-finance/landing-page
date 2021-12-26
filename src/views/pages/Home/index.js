@@ -144,7 +144,10 @@ function Home({}) {
 					<TrandingPlatform />
 				</div>
 
-				<DECENTRALIZED />
+				<div id="section2">
+					<DECENTRALIZED />
+				</div>
+
 				<div id="section3">
 					<Clique />
 				</div>

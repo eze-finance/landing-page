@@ -111,7 +111,6 @@ const useStyles = makeStyles((theme) => ({
 			height: "40px",
 			minWidth: "100%",
 			margin: "auto",
-			visibility: "hidden",
 		},
 		"&::before": {
 			content: '" "',
@@ -160,7 +159,7 @@ export default function DataLine(props) {
 							data-wow-delay="0.1s"
 						>
 							<Typography variant="h2">Treasury Balance</Typography>
-							<Typography variant="h4">{/* 763,768,941 */}$0</Typography>
+							<Typography variant="h4">763,768,941</Typography>
 						</Box>
 						<Box className={classes.lineBox}></Box>
 						<Box
@@ -169,10 +168,7 @@ export default function DataLine(props) {
 							data-wow-delay="0.2s"
 						>
 							<Typography variant="h2">Total Value Locked</Typography>
-							<Typography variant="h4">
-								{/* $2,996,311,618 */}
-								$0
-							</Typography>
+							<Typography variant="h4">$2,996,311,618</Typography>
 						</Box>
 						<Box className={classes.lineBox}></Box>
 						<Box
@@ -181,10 +177,7 @@ export default function DataLine(props) {
 							data-wow-delay="0.3s"
 						>
 							<Typography variant="h2">Current APY</Typography>
-							<Typography variant="h4">
-								{/* 7,109% */}
-								0%
-							</Typography>
+							<Typography variant="h4">7,109%</Typography>
 						</Box>
 					</Box>
 				</Box>
