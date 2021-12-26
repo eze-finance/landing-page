@@ -147,7 +147,7 @@ function Home({}) {
 					<TrandingPlatform />
 				</div>
 
-				<div id="section2">
+				<div id="section2" style={{ marginTop: "100px" }}>
 					<DECENTRALIZED />
 				</div>
 
