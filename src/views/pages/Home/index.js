@@ -151,7 +151,8 @@ function Home({}) {
 				<div id="section3">
 					<Clique />
 				</div>
-				<div id="section4" style={{ position: "relative" }}>
+
+				<div id="section4" style={{ marginTop: "100px" }}>
 					<div className={classes.shade4}></div>
 					<Unique />
 				</div>
