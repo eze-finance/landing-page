@@ -4,11 +4,11 @@ import {
 	Container,
 	Typography,
 	makeStyles,
-	// Button,
+	Button,
 	Grid,
 	// Theme,
 } from "@material-ui/core";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {} from "react-feather";
 const useStyles = makeStyles((theme) => ({
 	bannerBox: {
@@ -105,7 +105,18 @@ export default function NFTMarketplace() {
 										which links new and seasoned investors with vetted market
 										makers, incentivized benefit both.
 									</Typography>
-									{/* <Button variant="contained" color="secondary" size="large" component={Link} to="/clique"  className="wow slideInRight" data-wow-duration="0.7s" data-wow-delay="0.7s">Read More</Button> */}
+									<Button
+										variant="contained"
+										color="secondary"
+										size="large"
+										component={Link}
+										to="/clique"
+										className="wow slideInRight"
+										data-wow-duration="0.7s"
+										data-wow-delay="0.7s"
+									>
+										Read More
+									</Button>
 								</Box>
 							</Grid>
 						</Grid>
