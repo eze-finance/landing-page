@@ -144,6 +144,9 @@ const useStyles = makeStyles((theme) => ({
 		width: "100%",
 	},
 	lineH: { marginTop: "35px" },
+	colorWhite: {
+		color: "white",
+	},
 }));
 
 export default function HowItWorks() {
@@ -265,6 +268,16 @@ export default function HowItWorks() {
 							their choosing.
 						</Typography>
 					</Box>
+				</Box>
+			</Container>
+
+			<Container maxWidth="md">
+				<Box textAlign={"center"} pb={4} style={{ marginTop: "50px" }}>
+					<Typography variant="p" className={classes.colorWhite}>
+						A decentralized ecosystem for crypto investment management which
+						links fresh investors with vetted market makers, incentivized to
+						benefit both.
+					</Typography>
 				</Box>
 			</Container>
 		</Box>
