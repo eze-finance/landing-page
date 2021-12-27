@@ -151,7 +151,7 @@ function Home({}) {
 					<DECENTRALIZED />
 				</div>
 
-				<div id="section3">
+				<div id="section3" style={{ marginTop: "100px" }}>
 					<Clique />
 				</div>
 
