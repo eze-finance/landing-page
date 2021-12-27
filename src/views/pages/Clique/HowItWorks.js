@@ -274,9 +274,11 @@ export default function HowItWorks() {
 			<Container maxWidth="md">
 				<Box textAlign={"center"} pb={4} style={{ marginTop: "50px" }}>
 					<Typography variant="p" className={classes.colorWhite}>
-						A decentralized ecosystem for crypto investment management which
-						links fresh investors with vetted market makers, incentivized to
-						benefit both.
+						<strong>
+							A decentralized ecosystem for crypto investment management which
+							links fresh investors with vetted market makers, incentivized to
+							benefit both.
+						</strong>
 					</Typography>
 				</Box>
 			</Container>
