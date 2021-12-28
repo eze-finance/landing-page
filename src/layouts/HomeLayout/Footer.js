@@ -6,6 +6,7 @@ import {
 	Container,
 	Typography,
 	makeStyles,
+	Link as ATag,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
@@ -200,7 +201,7 @@ export default function Liquidity() {
 									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon" className={classes.noUnderline}>
+									<Link to="/contact-us" className={classes.noUnderline}>
 										Contact us
 									</Link>
 								</li>
@@ -242,33 +243,33 @@ export default function Liquidity() {
 							{/* <Link href="#" target="_blank">
 								<FaFacebookF />
 							</Link> */}
-							<Link
+							<ATag
 								href="https://www.linkedin.com/in/eze-finance-580a17219/"
 								target="_blank"
 							>
 								<FaLinkedinIn />
-							</Link>
-							<Link href="https://twitter.com/eze_finance" target="_blank">
+							</ATag>
+							<ATag href="https://twitter.com/eze_finance" target="_blank">
 								<FaTwitter />
-							</Link>
-							<Link href="https://t.me/ezefinance" target="_blank">
+							</ATag>
+							<ATag href="https://t.me/ezefinance" target="_blank">
 								<FaTelegramPlane />
-							</Link>
+							</ATag>
 							{/* <Link href="#" target="_blank">
 								<FaYoutube />
 							</Link> */}
-							<Link href="https://medium.com/@ezefinance" target="_blank">
+							<ATag href="https://medium.com/@ezefinance" target="_blank">
 								<FaMediumM />
-							</Link>
-							<Link
+							</ATag>
+							<ATag
 								href="https://www.instagram.com/eze.finance"
 								target="_blank"
 							>
 								<AiOutlineInstagram />
-							</Link>
-							<Link href="https://www.reddit.com/r/EZEfinance" target="_blank">
+							</ATag>
+							<ATag href="https://www.reddit.com/r/EZEfinance" target="_blank">
 								<FaRedditAlien />
-							</Link>
+							</ATag>
 							{/* <Link href="#" target="_blank">
 								<img src="/images/icongit.svg" alt="" />
 							</Link> */}
