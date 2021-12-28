@@ -19,6 +19,7 @@
     "apexcharts": "^3.32.0",
     "axios": "^0.21.1",
     "clsx": "^1.1.1",
+    "emailjs-com": "^3.2.0",
     "lodash": "^4.17.20",
     "material-ui-dropzone": "^3.5.0",
     "modified-line-chart": "^3.6.8",
@@ -38,7 +39,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-scroll": "^1.8.4",
-    "react-slick": "^0.28.1"
+    "react-slick": "^0.28.1",
+    "react-toastify": "^8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

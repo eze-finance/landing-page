@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useRef } from "react";
 import {
 	Grid,
 	Box,
@@ -10,6 +10,9 @@ import {
 } from "@material-ui/core";
 import Page from "src/component/Page";
 import TopBar from "src/layouts/HomeLayout/TopBar";
+import { toast } from "react-toastify";
+import { init, send } from "emailjs-com";
+init("user_gk3rZzAMzBdxrIjiIlBge");
 
 const useStyles = makeStyles((theme) => ({
 	bannerBox: {
@@ -188,13 +191,78 @@ const useStyles = makeStyles((theme) => ({
 			marginTop: "60px",
 		},
 	},
+	disabledButton: {
+		backgroundColor: "#efc437 !important",
+	},
 }));
 
 export default function ContactUs(props) {
-	const classes = useStyles();
-	useEffect(() => {
-		window.scrollTo(0, 0);
+	const form = useRef();
+	const [toSend, setToSend] = useState({
+		from_name: "",
+		from_subject: "",
+		from_phone: "",
+		message: "",
+		reply_to: "",
 	});
+	const [sendEmailButtonText, setSendEmailButtonText] = useState("Send Now");
+	const classes = useStyles();
+	const { disabledButton } = classes;
+
+	const handleChange = (e) => {
+		setToSend({ ...toSend, [e.target.name]: e.target.value });
+	};
+
+	const resetForm = () => {
+		setToSend({
+			from_name: "",
+			from_subject: "",
+			from_phone: "",
+			message: "",
+			reply_to: "",
+		});
+	};
+
+	const sendMail = async (e) => {
+		e.preventDefault();
+
+		// console.log("form.current: ", toSend);
+		setSendEmailButtonText("Sending Now...");
+
+		send(
+			"service_txx1ow9",
+			"template_vk10os5",
+			toSend,
+			"user_gk3rZzAMzBdxrIjiIlBge"
+		).then(
+			(result) => {
+				toast("Thanks for contacting us, we will get back to you soon.", {
+					position: "top-right",
+					autoClose: 5000,
+					hideProgressBar: true,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+				});
+				setSendEmailButtonText("Send Now");
+				resetForm();
+			},
+			(error) => {
+				toast.error("Opps! something went wrong, please try in sometime.", {
+					position: "top-right",
+					autoClose: 5000,
+					hideProgressBar: true,
+					closeOnClick: true,
+					pauseOnHover: true,
+					draggable: true,
+					progress: undefined,
+				});
+				setSendEmailButtonText("Send Now");
+				resetForm();
+			}
+		);
+	};
 	return (
 		<Page title="Contact Us">
 			<TopBar />
@@ -227,66 +295,96 @@ export default function ContactUs(props) {
 							<Typography variant="h2">EZE Technologies</Typography>
 							<Typography variant="h4">Get In Touch</Typography>
 						</Box>
-						<Box
-							className={`${classes.formData} wow slideInRight`}
-							data-wow-duration="0.1s"
-							data-wow-delay="0.1s"
-						>
-							<Grid container spacing={3}>
-								<Grid item xs={12} sm={6}>
-									<TextField
-										label="Name"
-										variant="filled"
-										color="primary"
-										fullWidth
-										size="large"
-									/>
+						<form ref={form} onSubmit={sendMail}>
+							<Box
+								className={`${classes.formData} wow slideInRight`}
+								data-wow-duration="0.1s"
+								data-wow-delay="0.1s"
+							>
+								<Grid container spacing={3}>
+									<Grid item xs={12} sm={6}>
+										<TextField
+											label="Name"
+											variant="filled"
+											color="primary"
+											fullWidth
+											size="large"
+											name="from_name"
+											value={toSend.from_name}
+											onChange={handleChange}
+										/>
+									</Grid>
+									<Grid item xs={12} sm={6}>
+										<TextField
+											label="Email"
+											variant="filled"
+											color="primary"
+											fullWidth
+											size="large"
+											name="reply_to"
+											value={toSend.reply_to}
+											onChange={handleChange}
+										/>
+									</Grid>
+									<Grid item xs={12} sm={6}>
+										<TextField
+											label="Phone"
+											variant="filled"
+											color="primary"
+											fullWidth
+											size="large"
+											name="from_phone"
+											value={toSend.from_phone}
+											onChange={handleChange}
+										/>
+									</Grid>
+									<Grid item xs={12} sm={6}>
+										<TextField
+											label="Subject"
+											variant="filled"
+											color="primary"
+											fullWidth
+											size="large"
+											name="from_subject"
+											value={toSend.from_subject}
+											onChange={handleChange}
+										/>
+									</Grid>
+									<Grid item xs={12} sm={12}>
+										<TextField
+											label="Message"
+											variant="filled"
+											color="primary"
+											fullWidth
+											size="large"
+											multiline
+											rows={4}
+											name="message"
+											value={toSend.message}
+											onChange={handleChange}
+										/>
+										<Box mt={4} textAlign="center" style={{ width: "100%" }}>
+											<Button
+												variant="contained"
+												color="secondary"
+												size="large"
+												onClick={sendMail}
+												className={
+													sendEmailButtonText == "Sending Now..."
+														? disabledButton
+														: ""
+												}
+												disabled={
+													sendEmailButtonText == "Sending Now..." ? true : null
+												}
+											>
+												{sendEmailButtonText}
+											</Button>
+										</Box>
+									</Grid>
 								</Grid>
-								<Grid item xs={12} sm={6}>
-									<TextField
-										label="Email"
-										variant="filled"
-										color="primary"
-										fullWidth
-										size="large"
-									/>
-								</Grid>
-								<Grid item xs={12} sm={6}>
-									<TextField
-										label="Phone"
-										variant="filled"
-										color="primary"
-										fullWidth
-										size="large"
-									/>
-								</Grid>
-								<Grid item xs={12} sm={6}>
-									<TextField
-										label="Subject"
-										variant="filled"
-										color="primary"
-										fullWidth
-										size="large"
-									/>
-								</Grid>
-								<Grid item xs={12} sm={12}>
-									<TextField
-										label="Message"
-										variant="filled"
-										color="primary"
-										fullWidth
-										size="large"
-										multiline
-										rows={4}
-									/>
-									<Box mt={4} textAlign="center" style={{ width: "100%" }}>
-										<Button variant="contained" color="secondary" size="large">
-											Send Now
-										</Button>
-									</Box>
-								</Grid>
-							</Grid>
-						</Box>
+							</Box>
+						</form>
 					</Box>
 				</Container>
 			</Box>
