@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
 	Grid,
 	Box,
@@ -18,6 +18,11 @@ import { FaMediumM } from "react-icons/fa";
 import { FaRedditAlien } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import {} from "react-feather";
+import validator from "validator";
+import { toast } from "react-toastify";
+const client = require("@sendgrid/client");
+client.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
+
 const useStyles = makeStyles((theme) => ({
 	noUnderline: {
 		textDecoration: "none",
@@ -113,6 +118,77 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Liquidity() {
 	const classes = useStyles();
+	const [toSend, setToSend] = useState({
+		email: "",
+	});
+
+	const handleChange = (e) => {
+		setToSend({ ...toSend, [e.target.name]: e.target.value });
+	};
+
+	const saveEmail = async (e) => {
+		if (validator.isEmail(toSend.email)) {
+			const data = {
+				contacts: [
+					{
+						email: toSend.email,
+						// "custom_fields": {}
+					},
+				],
+			};
+
+			const request = {
+				url: `/v3/marketing/contacts`,
+				method: "PUT",
+				body: data,
+			};
+
+			client
+				.request(request)
+				.then(([response, body]) => {
+					console.log(response.statusCode);
+					console.log(response.body);
+					toast("Thanks for subscribing to our newslater.", {
+						position: "top-right",
+						autoClose: 5000,
+						hideProgressBar: true,
+						closeOnClick: true,
+						pauseOnHover: true,
+						draggable: true,
+						progress: undefined,
+					});
+				})
+				.catch((error) => {
+					console.error(error);
+					toast.error(
+						"Opps! Something went wrong. Please subscribe in sometime.",
+						{
+							position: "top-right",
+							autoClose: 5000,
+							hideProgressBar: true,
+							closeOnClick: true,
+							pauseOnHover: true,
+							draggable: true,
+							progress: undefined,
+						}
+					);
+				})
+				.finally(() => {
+					setToSend({ email: "" });
+				});
+		} else {
+			toast.error("Please enter valid email address.", {
+				position: "top-right",
+				autoClose: 5000,
+				hideProgressBar: true,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+			});
+		}
+	};
+
 	return (
 		<Box className={classes.footerSection}>
 			<Container maxWidth="lg" style={{ paddingBottom: "70px" }}>
@@ -216,6 +292,10 @@ export default function Liquidity() {
 								Get the latest news and updates
 							</Typography>
 							<TextField
+								name="email"
+								id="email"
+								value={toSend.email}
+								onChange={handleChange}
 								style={{ marginTop: "2px" }}
 								id="outlined-basic"
 								placeholder="Enter your Email"
@@ -229,6 +309,7 @@ export default function Liquidity() {
 											size="small"
 											color="secondary"
 											endIcon={<FaChevronRight style={{ fontSize: "10px" }} />}
+											onClick={saveEmail}
 										>
 											Subscribe
 										</Button>
