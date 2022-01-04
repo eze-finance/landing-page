@@ -30,6 +30,13 @@ const baseOptions = {
 				},
 			},
 		},
+		MuiInput: {
+			underline: {
+				"&:before": {
+					borderBottom: "2px solid #fff",
+				},
+			},
+		},
 		MuiOutlinedInput: {
 			notchedOutline: {
 				border: "2px solid rgba(39, 36, 42, 0.47)",
