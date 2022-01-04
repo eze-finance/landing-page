@@ -146,9 +146,9 @@ export default function Liquidity() {
 			client
 				.request(request)
 				.then(([response, body]) => {
-					console.log(response.statusCode);
-					console.log(response.body);
-					toast("Thanks for subscribing to our newslater.", {
+					// console.log(response.statusCode);
+					// console.log(response.body);
+					toast("Thanks for subscribing to our newslatter.", {
 						position: "top-right",
 						autoClose: 5000,
 						hideProgressBar: true,
@@ -159,7 +159,7 @@ export default function Liquidity() {
 					});
 				})
 				.catch((error) => {
-					console.error(error);
+					// console.error(error);
 					toast.error(
 						"Opps! Something went wrong. Please subscribe in sometime.",
 						{
