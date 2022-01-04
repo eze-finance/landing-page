@@ -12,6 +12,10 @@ import Page from "src/component/Page";
 import TopBar from "src/layouts/HomeLayout/TopBar";
 import { toast } from "react-toastify";
 const client = require("@sendgrid/client");
+console.log(
+	"process.env.REACT_APP_SENDGRID_API_KEY:::: ",
+	process.env.REACT_APP_SENDGRID_API_KEY
+);
 client.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
 
 const useStyles = makeStyles((theme) => ({
