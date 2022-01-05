@@ -174,7 +174,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.1s"
 										data-wow-delay="0.1s"
 									>
-										EZE WALLET WILL BE A DECENTRALIZED EXCHANGE,
+										EZE Finance App
 									</Typography>
 									<Typography
 										variant="body1"
@@ -194,7 +194,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.4s"
 										data-wow-delay="0.4s"
 									>
-										Download Eze wallet
+										Download EZE Finance App
 									</Typography>
 									<Box
 										my={3}
