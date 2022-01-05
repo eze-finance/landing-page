@@ -182,11 +182,11 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.3s"
 										data-wow-delay="0.3s"
 									>
-										where users will have access to EZE Staking and Bonds for
-										Passive income and rewards! A decentralized ecosystem for
-										crypto investment management which links new and seasoned
-										investors with vetted market makers, incentivized to benefit
-										both.
+										A decentralized exchange where users will have access to EZE
+										Staking and Bonds for Passive income and rewards! A
+										decentralized ecosystem for crypto investment management
+										which links new and seasoned investors with vetted market
+										makers, incentivized to benefit both.
 									</Typography>
 									<Typography
 										variant="h5"
