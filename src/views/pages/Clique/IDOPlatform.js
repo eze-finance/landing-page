@@ -87,12 +87,10 @@ export default function NFTMarketplace() {
 										data-wow-duration="0.4s"
 										data-wow-delay="0.4s"
 									>
-										Launching hand-picked high-quality projects on the
-										Blockchain. EZE IDO is the premier IDO platform for projects
-										building on Avalanche — a new Ethereum sister chain designed
-										to provide an idyllic environment for building powerful new
-										applications, while simultaneously reducing the load on the
-										Ethereum network.
+										EZE is the platform that will level the playing field by
+										allowing the general investing public access to the highly
+										experienced crypto investing experts, while addressing the
+										problems at hand.
 									</Typography>
 								</Box>
 							</Grid>
