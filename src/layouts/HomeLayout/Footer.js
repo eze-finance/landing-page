@@ -325,7 +325,7 @@ export default function Liquidity() {
 								<FaFacebookF />
 							</Link> */}
 							<ATag
-								href="https://www.linkedin.com/in/eze-finance-580a17219/"
+								href="https://www.linkedin.com/company/ezefinance"
 								target="_blank"
 							>
 								<FaLinkedinIn />
