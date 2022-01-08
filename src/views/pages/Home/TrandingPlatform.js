@@ -178,7 +178,7 @@ export default function SkeletonChildrenDemo(props) {
 							<figure>
 								<img src="/images/home2/icon3.svg" alt="" />
 							</figure>
-							<Typography variant="h4">Rweards</Typography>
+							<Typography variant="h4">Rewards</Typography>
 							<Typography variant="body2">
 								Invest anything in EZE Stalking and redeem a free NFT badge.
 								This NFT badge will show that you are an OG investor in EZE!
