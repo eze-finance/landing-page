@@ -264,7 +264,7 @@ export default function HowItWorks() {
 							loading="lazy"
 						/>
 						<Typography variant="body2" color="primary">
-							Investors connect their Eze Clique account to a crypto exchange of
+							Investors connect their EZE Clique account to a crypto exchange of
 							their choosing.
 						</Typography>
 					</Box>
