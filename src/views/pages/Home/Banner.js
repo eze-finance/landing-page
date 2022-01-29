@@ -255,7 +255,7 @@ export default function Banner(props) {
 									data-wow-duration="0.2s"
 									data-wow-delay="0.2s"
 								>
-									Staking with EZE for newbies
+									Stake with EZE!
 								</Typography>
 
 								<Box
