@@ -16,6 +16,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
 import { FaRedditAlien } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import {} from "react-feather";
 import validator from "validator";
@@ -350,6 +351,9 @@ export default function Liquidity() {
 							</ATag>
 							<ATag href="https://www.reddit.com/r/EZEfinance" target="_blank">
 								<FaRedditAlien />
+							</ATag>
+							<ATag href="https://discord.io/EZEfinance+" target="_blank">
+								<FaDiscord />
 							</ATag>
 							{/* <Link href="#" target="_blank">
 								<img src="/images/icongit.svg" alt="" />
