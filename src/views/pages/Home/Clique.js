@@ -101,9 +101,9 @@ export default function NFTMarketplace() {
 										data-wow-duration="0.5s"
 										data-wow-delay="0.5s"
 									>
-										Decentralized ecosystem for crypto investment management
-										which links new and seasoned investors with vetted market
-										makers, incentivized benefit both.
+										EZE Clique is a Decentralized platform for crypto investment
+										management which links new and seasoned investors with
+										vetted market makers, incentivized to benefit both.
 									</Typography>
 									<Button
 										variant="contained"
