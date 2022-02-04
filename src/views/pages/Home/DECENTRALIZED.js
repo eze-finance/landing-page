@@ -182,11 +182,11 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.3s"
 										data-wow-delay="0.3s"
 									>
-										A decentralized exchange where users will have access to EZE
-										Staking and Bonds for Passive income and rewards! A
-										decentralized ecosystem for crypto investment management
-										which links new and seasoned investors with vetted market
-										makers, incentivized to benefit both.
+										The EZE wallet is a decentralized exchange where users will
+										have access to EZE Staking and Bonds for Passive income and
+										rewards! Soon EZE will implement a crypto investment
+										management platform which links new and retail investors
+										with elite traders, incentivized to benefit both.
 									</Typography>
 									<Typography
 										variant="h5"

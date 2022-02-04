@@ -168,9 +168,9 @@ export default function SkeletonChildrenDemo(props) {
 								</Box>
 								<Typography variant="h1">Introduction</Typography>
 								<Typography variant="h5">
-									A decentralized ecosystem for crypto investment management
-									which links new and seasoned investors with vetted market
-									makers, incentivized to benefit both.
+									EZE Clique is a Decentralized platform for crypto investment
+									management which links new and retail investors with elite
+									traders, incentivized to benefit both.
 								</Typography>
 							</Box>
 						</Grid>
