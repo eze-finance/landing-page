@@ -253,6 +253,14 @@ export default function Liquidity() {
 										EZE Live
 									</Link>
 								</li>
+								<li>
+									<a
+										href="https://www.ieze.info/#/"
+										className={classes.noUnderline}
+									>
+										iEZE Vault
+									</a>
+								</li>
 							</ul>
 						</Box>
 					</Grid>
