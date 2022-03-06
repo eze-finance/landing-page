@@ -224,7 +224,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.7s"
 										data-wow-delay="0.7s"
 									>
-										Coming soon! ending February 2022.
+										Coming soon! ending March 2022.
 									</Typography>
 								</Box>
 							</Grid>

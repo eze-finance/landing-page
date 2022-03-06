@@ -152,10 +152,10 @@ const useStyles = makeStyles((theme) => ({
 export default function Banner(props) {
 	const classes = useStyles();
 	const initialCountdownSettings = {
-		dateValue: "03-27-2022",
+		dateValue: "03-31-2022",
 		timeValue: "11:59",
 		ampmValue: "pm",
-		unixEndDate: "1647475140",
+		unixEndDate: "1648771140",
 	};
 	const initialCountdownTimer = {
 		days: "",
