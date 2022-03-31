@@ -250,7 +250,7 @@ export default function Liquidity() {
 								</li>
 								<li>
 									<Link to="/coming-soon" className={classes.noUnderline}>
-										EZE Live
+										EZE Scan
 									</Link>
 								</li>
 								<li>

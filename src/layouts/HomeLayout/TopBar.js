@@ -334,7 +334,7 @@ export default function Header({ buttonClick }) {
 					{" "}
 					<Link className={menuButton} to="/coming-soon">
 						{" "}
-						EZE Live{" "}
+						EZE Scan{" "}
 					</Link>
 				</li>
 				{/* <Link className={menuButton} to="/">Litepaper</Link> */}
