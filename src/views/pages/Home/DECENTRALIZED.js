@@ -194,7 +194,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.4s"
 										data-wow-delay="0.4s"
 									>
-										Download EZE App
+										Coming soon! end of Q2 2022
 									</Typography>
 									<Box
 										my={3}
@@ -217,7 +217,7 @@ export default function DECENTRALIZED() {
 											ios
 										</Button>
 									</Box>
-									<Typography
+									{/* <Typography
 										variant="body1"
 										style={{ fontWeight: "600" }}
 										className="wow bounceInUp"
@@ -225,7 +225,7 @@ export default function DECENTRALIZED() {
 										data-wow-delay="0.7s"
 									>
 										Coming soon! end of Q2 2022
-									</Typography>
+									</Typography> */}
 								</Box>
 							</Grid>
 							<Grid item xs={12} sm={6} md={6}>
