@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Page from "src/component/Page";
 import Banner from "./Banner";
 import DECENTRALIZED from "./DECENTRALIZED";
-// import Tokenomics from "./Tokenomics";
+import Tokenomics from "./Tokenomics";
 import Roadmap from "./Roadmap";
 import Unique from "./Unique";
 import Clique from "./Clique";
@@ -137,14 +137,14 @@ function Home({}) {
 				<div className={`${classes.shade2} animatecss`}></div>
 				<div className={`${classes.shade1} animatecss1`}></div>
 				<div id="section1">
-					<Banner />
-					<DataLine />
+					{/* <Banner /> */}
+					{/* <DataLine /> */}
 				</div>
 
 				<div id="section2">
 					<div className={`${classes.shade1} animatecss1`}></div>
 					<div className={`${classes.shade3} animatecss`}></div>
-					<TrandingPlatform />
+					{/* <TrandingPlatform /> */}
 				</div>
 
 				<div id="section2" style={{ marginTop: "100px" }}>
@@ -171,7 +171,8 @@ function Home({}) {
 					className={classes.shaodw1}
 					alt=""
 				/>
-				<Roadmap />
+				{/* <Roadmap /> */}
+				<Tokenomics />
 			</div>
 			{/* <div id="section6">
 				<img

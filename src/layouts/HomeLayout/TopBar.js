@@ -257,11 +257,11 @@ export default function Header({ buttonClick }) {
 	const menuText = (
 		<nav>
 			<ul class={menuul}>
-				<li>
+				{/* <li>
 					{" "}
 					{history.location.pathname !== "/" ? (
 						<Link className={menuButton} to="/">
-							Staking
+							Tokonomics
 						</Link>
 					) : (
 						<ScrollLink
@@ -271,16 +271,16 @@ export default function Header({ buttonClick }) {
 							to="section1"
 						>
 							{" "}
-							Staking{" "}
+							Tokonomics{" "}
 						</ScrollLink>
 					)}
-				</li>
+				</li> */}
 
 				<li>
 					{" "}
 					{history.location.pathname !== "/" ? (
 						<Link className={menuButton} to="/">
-							Roadmap
+							Home
 						</Link>
 					) : (
 						<ScrollLink
@@ -290,7 +290,7 @@ export default function Header({ buttonClick }) {
 							to="section5"
 						>
 							{" "}
-							Roadmap{" "}
+							Home{" "}
 						</ScrollLink>
 					)}
 				</li>
@@ -312,11 +312,12 @@ export default function Header({ buttonClick }) {
 						</ScrollLink>
 					)}
 				</li> */}
+
 				<li>
 					{" "}
 					{history.location.pathname !== "/clique" ? (
 						<Link className={menuButton} to="/clique">
-							EZE Clique
+							Clique
 						</Link>
 					) : (
 						<ScrollLink
@@ -326,17 +327,31 @@ export default function Header({ buttonClick }) {
 							to="section4"
 						>
 							{" "}
-							EZE Clique{" "}
+							Clique{" "}
 						</ScrollLink>
 					)}
 				</li>
-				<li>
-					{" "}
-					<Link className={menuButton} to="/coming-soon">
+				{history.location.pathname !== "/clique" ? (
+					<li>
 						{" "}
-						EZE Scan{" "}
-					</Link>
-				</li>
+						{history.location.pathname !== "/" ? (
+							<Link className={menuButton} to="/">
+								Tokonomics
+							</Link>
+						) : (
+							<ScrollLink
+								className={menuButton}
+								smooth={true}
+								duration={500}
+								to="section5"
+							>
+								{" "}
+								Tokonomics{" "}
+							</ScrollLink>
+						)}
+					</li>
+				) : null}
+
 				{/* <Link className={menuButton} to="/">Litepaper</Link> */}
 				{/* {history.location.pathname !== "/" ?<Link to="/">projects</Link>  : <ScrollLink className="navy" smooth={true} duration={500}  to="section3" > EZE Lite </ScrollLink>} */}
 				<li>
