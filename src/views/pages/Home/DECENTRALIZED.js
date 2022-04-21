@@ -174,7 +174,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.1s"
 										data-wow-delay="0.1s"
 									>
-										EZE Finance App
+										EZE App
 									</Typography>
 									<Typography
 										variant="body1"
@@ -194,7 +194,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.4s"
 										data-wow-delay="0.4s"
 									>
-										Download EZE Finance App
+										Download EZE App
 									</Typography>
 									<Box
 										my={3}
