@@ -174,8 +174,15 @@ export default function Tokenomics() {
 				</Box>
 
 				<Box mt={5} textAlign="center">
-					<img
+					{/* <img
 						src="/images/home/tokenomics2.svg"
+						width="100%"
+						className={classes.investorImg}
+						alt=""
+					/> */}
+
+					<img
+						src="/images/home2/tokenomics.png"
 						width="100%"
 						className={classes.investorImg}
 						alt=""

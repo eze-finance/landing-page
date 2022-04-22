@@ -331,26 +331,25 @@ export default function Header({ buttonClick }) {
 						</ScrollLink>
 					)}
 				</li>
-				{history.location.pathname !== "/clique" ? (
-					<li>
-						{" "}
-						{history.location.pathname !== "/" ? (
-							<Link className={menuButton} to="/">
-								Tokonomics
-							</Link>
-						) : (
-							<ScrollLink
-								className={menuButton}
-								smooth={true}
-								duration={500}
-								to="section5"
-							>
-								{" "}
-								Tokonomics{" "}
-							</ScrollLink>
-						)}
-					</li>
-				) : null}
+
+				<li>
+					{" "}
+					{history.location.pathname !== "/" ? (
+						<Link className={menuButton} to="/">
+							Tokonomics
+						</Link>
+					) : (
+						<ScrollLink
+							className={menuButton}
+							smooth={true}
+							duration={500}
+							to="section5"
+						>
+							{" "}
+							Tokonomics{" "}
+						</ScrollLink>
+					)}
+				</li>
 
 				{/* <Link className={menuButton} to="/">Litepaper</Link> */}
 				{/* {history.location.pathname !== "/" ?<Link to="/">projects</Link>  : <ScrollLink className="navy" smooth={true} duration={500}  to="section3" > EZE Lite </ScrollLink>} */}
