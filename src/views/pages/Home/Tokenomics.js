@@ -161,7 +161,7 @@ export default function Tokenomics() {
 	const classes = useStyles();
 
 	return (
-		<Box className={classes.bannerBox}>
+		<Box className={classes.bannerBox} mb={4}>
 			<img
 				src="/images/home2/three.png"
 				width="100%"
@@ -173,7 +173,7 @@ export default function Tokenomics() {
 					<Typography variant="h1">Tokenomics</Typography>
 				</Box>
 
-				<Box mt={5} textAlign="center">
+				<Box mt={5} mb={5} textAlign="center">
 					{/* <img
 						src="/images/home/tokenomics2.svg"
 						width="100%"
@@ -189,6 +189,8 @@ export default function Tokenomics() {
 					/>
 
 					<Box></Box>
+					<br />
+					<br />
 				</Box>
 			</Container>
 		</Box>
