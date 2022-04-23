@@ -228,7 +228,7 @@ export default function Liquidity() {
 						<Box class=" col-lg-4 col-md-4 col-sm-6 col-12">
 							<Typography variant="h5">Products</Typography>
 							<ul class="footer_text">
-								<li>
+								{/* <li>
 									<Link to="/" className={classes.noUnderline}>
 										Staking
 									</Link>
@@ -237,7 +237,7 @@ export default function Liquidity() {
 									<Link to="/coming-soon" className={classes.noUnderline}>
 										Bonds
 									</Link>
-								</li>
+								</li> */}
 								<li>
 									<Link to="/coming-soon" className={classes.noUnderline}>
 										Swap
@@ -248,17 +248,17 @@ export default function Liquidity() {
 										EZE CLique
 									</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link to="/coming-soon" className={classes.noUnderline}>
 										EZE Scan
 									</Link>
-								</li>
+								</li> */}
 								<li>
 									<a
 										href="https://www.ieze.info/#/"
 										className={classes.noUnderline}
 									>
-										iEZE Vault
+										Vault
 									</a>
 								</li>
 							</ul>
