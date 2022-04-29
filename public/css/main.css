@@ -1,0 +1,8 @@
+.alink {
+    color:white;
+    text-decoration: none;
+}
+
+.alink:hover {
+    color:#efc437;
+}
