@@ -172,15 +172,7 @@ export default function Tokenomics() {
 				<Box className={classes.textbox} textAlign="center" pb={4}>
 					<Typography variant="h1">Tokenomics</Typography>
 				</Box>
-
 				<Box mt={5} mb={5} textAlign="center">
-					{/* <img
-						src="/images/home/tokenomics2.svg"
-						width="100%"
-						className={classes.investorImg}
-						alt=""
-					/> */}
-
 					<img
 						src="/images/home2/tokenomics.png"
 						width="100%"
@@ -189,9 +181,38 @@ export default function Tokenomics() {
 					/>
 
 					<Box></Box>
-					<br />
-					<br />
 				</Box>
+				<Box textAlign="center">
+					<Button
+						variant="contained"
+						color="secondary"
+						href="https://traderjoexyz.com/trade?inputCurrency=0x3af6e2619140f356b04507b1a47e00091649244a&outputCurrency=0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7#/"
+						style={{ marginTop: "15px" }}
+						target="_blank"
+					>
+						Buy EZE on TraderJoe
+					</Button>
+
+					<Typography
+						variant="h4"
+						style={{ color: "#e9df5f", marginTop: "20px" }}
+					>
+						EZE Token Address:
+					</Typography>
+
+					<Typography variant="h5" style={{ marginTop: "5px" }}>
+						<a
+							href="https://snowtrace.io/token/0x3AF6e2619140f356B04507b1A47e00091649244a"
+							className="alink"
+							target="_blank"
+						>
+							0x3AF6e2619140f356B04507b1A47e00091649244a
+						</a>
+					</Typography>
+				</Box>
+
+				<br />
+				<br />
 			</Container>
 		</Box>
 	);
