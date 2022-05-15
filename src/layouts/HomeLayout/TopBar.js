@@ -351,6 +351,37 @@ export default function Header({ buttonClick }) {
 					)}
 				</li>
 
+				<li>
+					{/* <Link
+						className={menuButton}
+						href="https://sweepwidget.com/view/57021-iwmnuyk9"
+					>
+						Airdrop
+					</Link> */}
+
+					<a
+						href="https://sweepwidget.com/view/57021-iwmnuyk9"
+						className={menuButton}
+						target="_blank"
+					>
+						Airdrop
+					</a>
+					{/* {" "}
+					{history.location.pathname !== "/" ? (
+						
+					) : (
+						<ScrollLink
+							className={menuButton}
+							smooth={true}
+							duration={500}
+							to="section5"
+						>
+							{" "}
+							Airdrop{" "}
+						</ScrollLink>
+					)} */}
+				</li>
+
 				{/* <Link className={menuButton} to="/">Litepaper</Link> */}
 				{/* {history.location.pathname !== "/" ?<Link to="/">projects</Link>  : <ScrollLink className="navy" smooth={true} duration={500}  to="section3" > EZE Lite </ScrollLink>} */}
 				<li>
