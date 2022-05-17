@@ -360,7 +360,7 @@ export default function Liquidity() {
 							<ATag href="https://www.reddit.com/r/EZEfinance" target="_blank">
 								<FaRedditAlien />
 							</ATag>
-							<ATag href="https://discord.io/EZEfinance+" target="_blank">
+							<ATag href="https://discord.io/EZEfinance" target="_blank">
 								<FaDiscord />
 							</ATag>
 							{/* <Link href="#" target="_blank">
