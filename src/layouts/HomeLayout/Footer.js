@@ -281,7 +281,7 @@ export default function Liquidity() {
 									</Link>
 								</li>
 								<li>
-									<Link to="/coming-soon" className={classes.noUnderline}>
+									<Link to="/privacy" className={classes.noUnderline}>
 										Privacy Policy
 									</Link>
 								</li>

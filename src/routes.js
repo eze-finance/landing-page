@@ -29,6 +29,12 @@ export const routes = [
 	},
 	{
 		exact: true,
+		path: "/privacy",
+		layout: HomeLayout,
+		component: lazy(() => import("src/views/pages/Home/privacyPolicy")),
+	},
+	{
+		exact: true,
 		path: "/404",
 		component: lazy(() => import("src/views/errors/NotFound")),
 	},
