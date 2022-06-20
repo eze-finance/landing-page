@@ -359,13 +359,13 @@ export default function Header({ buttonClick }) {
 						Airdrop
 					</Link> */}
 
-					<a
+					{/* <a
 						href="https://sweepwidget.com/view/57021-iwmnuyk9"
 						className={menuButton}
 						target="_blank"
 					>
 						Airdrop
-					</a>
+					</a> */}
 					{/* {" "}
 					{history.location.pathname !== "/" ? (
 						
