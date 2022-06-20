@@ -194,75 +194,15 @@ const useStyles = makeStyles((theme) => ({
 	disabledButton: {
 		backgroundColor: "#efc437 !important",
 	},
+	linkColor: {
+		color: "#efc437",
+	},
 }));
 
-export default function ContactUs(props) {
-	const form = useRef();
-	const [toSend, setToSend] = useState({
-		from_name: "",
-		from_subject: "",
-		from_phone: "",
-		message: "",
-		reply_to: "",
-	});
-	const [sendEmailButtonText, setSendEmailButtonText] = useState("Send Now");
+export default function PrivacyPolicy(props) {
 	const classes = useStyles();
 	const { disabledButton } = classes;
 
-	const handleChange = (e) => {
-		setToSend({ ...toSend, [e.target.name]: e.target.value });
-	};
-
-	const resetForm = () => {
-		setToSend({
-			from_name: "",
-			from_subject: "",
-			from_phone: "",
-			message: "",
-			reply_to: "",
-		});
-	};
-
-	const sendMail = async (e) => {
-		e.preventDefault();
-
-		// console.log("form.current: ", toSend);
-		setSendEmailButtonText("Sending Now...");
-
-		send(
-			"service_txx1ow9",
-			"template_vk10os5",
-			toSend,
-			"user_gk3rZzAMzBdxrIjiIlBge"
-		).then(
-			(result) => {
-				toast("Thanks for contacting us, we will get back to you soon.", {
-					position: "top-right",
-					autoClose: 5000,
-					hideProgressBar: true,
-					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
-					progress: undefined,
-				});
-				setSendEmailButtonText("Send Now");
-				resetForm();
-			},
-			(error) => {
-				toast.error("Opps! something went wrong, please try in sometime.", {
-					position: "top-right",
-					autoClose: 5000,
-					hideProgressBar: true,
-					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
-					progress: undefined,
-				});
-				setSendEmailButtonText("Send Now");
-				resetForm();
-			}
-		);
-	};
 	return (
 		<Page title="Contact Us">
 			<TopBar />
@@ -327,11 +267,17 @@ export default function ContactUs(props) {
 								This Privacy Policy (&quot;Privacy Policy&quot;) helps explain
 								how we collect, use, store, and protect your information when
 								you use the App, our developer software, or our website at&nbsp;
-								<a href="https://wallet.coinbase.com/">
+								<a
+									href="https://wallet.coinbase.com/"
+									className={classes.linkColor}
+								>
 									https://eze.finance
 								</a>{" "}
 								(collectively the &quot;Services&quot;). Please also read
-								<a href="https://wallet.coinbase.com/terms-of-service">
+								<a
+									href="https://wallet.coinbase.com/terms-of-service"
+									className={classes.linkColor}
+								>
 									&nbsp;Terms of Service
 								</a>{" "}
 								(the &ldquo;Terms&rdquo;), which describe the terms under which
@@ -929,7 +875,12 @@ export default function ContactUs(props) {
 							<p>
 								If you want to know more about our security practice, please
 								visit the following link:&nbsp;
-								<a href="https://eze.finance/security">https://eze.finance</a>
+								<a
+									href="https://eze.finance/security"
+									className={classes.linkColor}
+								>
+									https://eze.finance
+								</a>
 							</p>
 							<p>&nbsp;</p>
 							<h2>10. EU Residents</h2>
@@ -945,7 +896,10 @@ export default function ContactUs(props) {
 								about an individual from which that person can be identified. It
 								does not include data where the identity has been removed
 								(anonymous data). More information could be found here:&nbsp;
-								<a href="https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-personal-data_en">
+								<a
+									href="https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-personal-data_en"
+									className={classes.linkColor}
+								>
 									https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-personal-data_en
 								</a>
 							</p>
@@ -965,7 +919,10 @@ export default function ContactUs(props) {
 							</p>
 							<p>
 								See also&nbsp;
-								<a href="https://crypto.com/privacy/ncw#special-purpose">
+								<a
+									href="https://crypto.com/privacy/ncw#special-purpose"
+									className={classes.linkColor}
+								>
 									row iv
 								</a>{" "}
 								in the table which describes the purposes for which we will use
@@ -985,7 +942,10 @@ export default function ContactUs(props) {
 								available here:
 							</p>
 							<p>
-								<a href="https://edpb.europa.eu/about-edpb/board/members_en">
+								<a
+									href="https://edpb.europa.eu/about-edpb/board/members_en"
+									className={classes.linkColor}
+								>
 									https://edpb.europa.eu/about-edpb/board/members_en
 								</a>
 							</p>
@@ -1024,7 +984,10 @@ export default function ContactUs(props) {
 							</p>
 							<p>
 								Further information on these&nbsp;
-								<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004D0915">
+								<a
+									href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004D0915"
+									className={classes.linkColor}
+								>
 									EU Model Clauses
 								</a>{" "}
 								(a.k.a Standard Contractual Clauses) and the rights they provide
@@ -1088,7 +1051,9 @@ export default function ContactUs(props) {
 							<p>
 								&quot;Site&quot; means the relevant sections of the website
 								under which EZE provides all or part of its Services:&nbsp;
-								<a href="https://eze.finance">https://eze.finance.</a>
+								<a href="https://eze.finance" className={classes.linkColor}>
+									https://eze.finance.
+								</a>
 							</p>
 							<strong>Services</strong>
 							<p>
@@ -1372,7 +1337,12 @@ export default function ContactUs(props) {
 							<p>
 								If you have any questions about our Privacy Policy, please do
 								not hesitate to contact us at{" "}
-								<a href="mailto:privacy@eze.finance">privacy@eze.finance.</a>
+								<a
+									href="mailto:privacy@eze.finance"
+									className={classes.linkColor}
+								>
+									privacy@eze.finance.
+								</a>
 							</p>
 						</Box>
 					</Typography>
