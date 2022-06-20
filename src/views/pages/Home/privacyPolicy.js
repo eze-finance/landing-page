@@ -204,7 +204,7 @@ export default function PrivacyPolicy(props) {
 	const { disabledButton } = classes;
 
 	return (
-		<Page title="Contact Us">
+		<Page title="Privacy Policy">
 			<TopBar />
 			<Box className={`${classes.TopHeader} wow bounceInUp`}>
 				<Typography variant="h2">EZE Privacy Policy</Typography>
