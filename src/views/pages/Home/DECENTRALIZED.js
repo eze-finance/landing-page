@@ -6,6 +6,7 @@ import {
 	makeStyles,
 	Button,
 	Grid,
+	Link,
 } from "@material-ui/core";
 import {} from "react-feather";
 const useStyles = makeStyles((theme) => ({
@@ -137,7 +138,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DECENTRALIZED() {
 	const classes = useStyles();
-
 	return (
 		<Box className={classes.bannerBox}>
 			<Box component="div" sx={{ display: { xs: "none", sm: "block" } }}>
@@ -193,8 +193,9 @@ export default function DECENTRALIZED() {
 										className="wow slideInRight"
 										data-wow-duration="0.4s"
 										data-wow-delay="0.4s"
+										style={{ color: "lime" }}
 									>
-										Coming soon! end of Q2 2022
+										Available Now!
 									</Typography>
 									<Box
 										my={3}
@@ -207,14 +208,24 @@ export default function DECENTRALIZED() {
 											color="secondary"
 											startIcon={<img src="/images/home2/android.svg" />}
 										>
-											Android
+											<Link
+												href="https://play.google.com/store/apps/details?id=com.eze.app"
+												target={"_blank"}
+											>
+												Android
+											</Link>
 										</Button>
 										<Button
 											variant="contained"
 											color="secondary"
 											startIcon={<img src="/images/home2/apple.svg" />}
 										>
-											ios
+											<Link
+												href="https://apps.apple.com/us/app/eze/id1598958696"
+												target={"_blank"}
+											>
+												ios
+											</Link>
 										</Button>
 									</Box>
 									{/* <Typography
