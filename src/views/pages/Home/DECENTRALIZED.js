@@ -188,6 +188,17 @@ export default function DECENTRALIZED() {
 										management platform which links new and retail investors
 										with elite traders, incentivized to benefit both.
 									</Typography>
+
+									<Typography
+										variant="body1"
+										className="wow slideInRight"
+										data-wow-duration="0.3s"
+										data-wow-delay="0.3s"
+									>
+										Our soon to release Wallet, will be a DeFi based Hub for our
+										up and coming projects, like Clique!
+									</Typography>
+
 									<Typography
 										variant="h5"
 										className="wow slideInRight"

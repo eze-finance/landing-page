@@ -208,8 +208,7 @@ export default function HowItWorks() {
 							loading="lazy"
 						/>
 						<Typography variant="body2" color="primary">
-							Market makers place orders at their preferred exchange via the Eze
-							Clique ordering platform.
+							Market makers place trades in EZE DEX.
 						</Typography>
 					</Box>
 					<Box className={classes.box2}>
@@ -231,7 +230,7 @@ export default function HowItWorks() {
 							loading="lazy"
 						/>
 						<Typography variant="h3">Order</Typography>
-						<Typography variant="h6">Matched with a contract</Typography>
+						<Typography variant="h6">Aligned with a smart contract.</Typography>
 					</Box>
 					<Box className={classes.box2Holder}>
 						<Box className={classes.box1}>
@@ -251,10 +250,8 @@ export default function HowItWorks() {
 								Investor
 							</Typography>
 							<Typography variant="body2">
-								An investor will be following the trades of experienced market
-								makers. By reviewing and signing open contracts in a specific
-								network, orders will be simultaneously be placed matching the
-								market maker.
+								An investor will have his investment aligned with the market
+								maker's trade, executed by a smart contract.
 							</Typography>
 						</Box>
 						<img
