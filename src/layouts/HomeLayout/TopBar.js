@@ -352,6 +352,13 @@ export default function Header({ buttonClick }) {
 				</li>
 
 				<li>
+					{" "}
+					<a href="/litepaper.pdf" className={menuButton} target="_blank">
+						Litepaper
+					</a>
+				</li>
+
+				<li>
 					{/* <Link
 						className={menuButton}
 						href="https://sweepwidget.com/view/57021-iwmnuyk9"
