@@ -87,10 +87,10 @@ export default function NFTMarketplace() {
 										data-wow-duration="0.4s"
 										data-wow-delay="0.4s"
 									>
-										EZE is the platform that will level the playing field by
-										allowing the general investing public access to the highly
-										experienced crypto investing experts, while addressing the
-										problems at hand.
+										Clique will level the trading field by allowing the retail
+										investing public access to experienced investment managers,
+										therefore putting you in a circle with dedicated investors
+										and traders.
 									</Typography>
 								</Box>
 							</Grid>
