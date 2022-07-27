@@ -332,7 +332,7 @@ export default function Header({ buttonClick }) {
 					)}
 				</li>
 
-				<li>
+				{/* <li>
 					{" "}
 					{history.location.pathname !== "/" ? (
 						<Link className={menuButton} to="/">
@@ -349,7 +349,7 @@ export default function Header({ buttonClick }) {
 							Tokenomics{" "}
 						</ScrollLink>
 					)}
-				</li>
+				</li> */}
 
 				<li>
 					{" "}
