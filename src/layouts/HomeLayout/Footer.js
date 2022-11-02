@@ -339,7 +339,7 @@ export default function Liquidity() {
 							>
 								<FaLinkedinIn />
 							</ATag>
-							<ATag href="https://twitter.com/eze_finance" target="_blank">
+							<ATag href="https://twitter.com/eze_fi" target="_blank">
 								<FaTwitter />
 							</ATag>
 							<ATag href="https://t.me/ezefinance" target="_blank">
