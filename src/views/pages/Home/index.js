@@ -151,9 +151,9 @@ function Home({}) {
 					<DECENTRALIZED />
 				</div>
 
-				<div id="section3" style={{ marginTop: "100px" }}>
+				{/* <div id="section3" style={{ marginTop: "100px" }}>
 					<Clique />
-				</div>
+				</div> */}
 
 				<div id="section4" style={{ marginTop: "100px" }}>
 					<div className={classes.shade4}></div>
@@ -172,7 +172,7 @@ function Home({}) {
 					alt=""
 				/>
 				{/* <Roadmap /> */}
-				<Tokenomics />
+				{/* <Tokenomics /> */}
 			</div>
 			{/* <div id="section6">
 				<img

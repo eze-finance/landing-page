@@ -243,11 +243,11 @@ export default function Liquidity() {
 										Swap
 									</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link to="/clique" className={classes.noUnderline}>
 										EZE CLique
 									</Link>
-								</li>
+								</li> */}
 								{/* <li>
 									<Link to="/coming-soon" className={classes.noUnderline}>
 										EZE Scan

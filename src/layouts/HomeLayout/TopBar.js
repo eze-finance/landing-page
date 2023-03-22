@@ -313,7 +313,7 @@ export default function Header({ buttonClick }) {
 					)}
 				</li> */}
 
-				<li>
+				{/* <li>
 					{" "}
 					{history.location.pathname !== "/clique" ? (
 						<Link className={menuButton} to="/clique">
@@ -330,7 +330,7 @@ export default function Header({ buttonClick }) {
 							Clique{" "}
 						</ScrollLink>
 					)}
-				</li>
+				</li> */}
 
 				{/* <li>
 					{" "}
