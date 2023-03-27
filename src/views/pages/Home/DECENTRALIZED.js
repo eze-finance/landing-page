@@ -174,7 +174,7 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.1s"
 										data-wow-delay="0.1s"
 									>
-										EZE App
+										EZE NeoBank & Decentralized  Wallet. 
 									</Typography>
 									<Typography
 										variant="body1"
@@ -182,11 +182,14 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.3s"
 										data-wow-delay="0.3s"
 									>
-										The EZE wallet is a decentralized exchange where users will
-										have access to EZE Staking and Bonds for Passive income and
-										rewards! Soon EZE will implement a crypto investment
-										management platform which links new and retail investors
-										with elite traders, incentivized to benefit both.
+										The App that will put you in control of your digital financial life.
+Manage all your money together in one sample App.
+										<ul>
+											<li><strong>DeFi Crypto Wallet</strong></li>
+											<li><strong>Banking</strong></li>
+											<li><strong>Visa® Debit Card</strong>, All your digital finances are linked to your Visa Card.</li>
+										</ul>
+
 									</Typography>
 
 									<Typography
@@ -195,8 +198,8 @@ export default function DECENTRALIZED() {
 										data-wow-duration="0.3s"
 										data-wow-delay="0.3s"
 									>
-										Our soon to release Wallet, will be a DeFi based Hub for our
-										up and coming projects, like Clique!
+										{/* Our soon to release Wallet, will be a DeFi based Hub for our
+										up and coming projects, like Clique! */}
 									</Typography>
 
 									<Typography
@@ -206,7 +209,8 @@ export default function DECENTRALIZED() {
 										data-wow-delay="0.4s"
 										style={{ color: "lime" }}
 									>
-										Available Now!
+										{/* Available Now! */}
+										1. Download our app
 									</Typography>
 									<Box
 										my={3}
@@ -239,6 +243,49 @@ export default function DECENTRALIZED() {
 											</Link>
 										</Button>
 									</Box>
+
+									<Typography
+										variant="h5"
+										className="wow slideInRight"
+										data-wow-duration="0.4s"
+										data-wow-delay="0.4s"
+										style={{ color: "lime" }}
+									>
+										{/* Available Now! */}
+										2. Create Wallet
+									</Typography>
+
+									<Typography
+										variant="body1"
+										className="wow slideInRight"
+										data-wow-duration="0.3s"
+										data-wow-delay="0.3s"
+									>
+										EZE only creates 24 Words Recovery Phrases! That is the highest tier of security so we highly recommended to do the backup to iCloud or Google Drive right after you create your wallet.
+
+
+									</Typography>
+
+									<Typography
+										variant="h5"
+										className="wow slideInRight"
+										data-wow-duration="0.4s"
+										data-wow-delay="0.4s"
+										style={{ color: "lime" }}
+									>
+										3. Start Banking
+									</Typography>
+
+									<Typography
+										variant="body1"
+										className="wow slideInRight"
+										data-wow-duration="0.3s"
+										data-wow-delay="0.3s"
+									>
+										Coming Soon!
+
+
+									</Typography>
 									{/* <Typography
 										variant="body1"
 										style={{ fontWeight: "600" }}
@@ -247,6 +294,24 @@ export default function DECENTRALIZED() {
 										data-wow-delay="0.7s"
 									>
 										Coming soon! end of Q2 2022
+									</Typography> */}
+
+									{/* <Typography
+										variant="h1"
+										className="wow slideInRight"
+										data-wow-duration="0.1s"
+										data-wow-delay="0.1s"
+									>
+										EZE Chat moves digital money Instantly.
+									</Typography>
+									<Typography
+										variant="body1"
+										className="wow slideInRight"
+										data-wow-duration="0.3s"
+										data-wow-delay="0.3s"
+									>
+										PAY AND GET PAID, FAST & EASY. SEND MONEY TO FRIENDS AND FAMILY, OR REQUEST IT TO SETTLE UP EASILY.
+
 									</Typography> */}
 								</Box>
 							</Grid>

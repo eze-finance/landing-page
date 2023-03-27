@@ -5,7 +5,8 @@ import DECENTRALIZED from "./DECENTRALIZED";
 import Tokenomics from "./Tokenomics";
 import Roadmap from "./Roadmap";
 import Unique from "./Unique";
-import Clique from "./Clique";
+import BankAccounts from "./BankAccounts";
+import EZEChat from "./EzeChat";
 import DataLine from "./DataLine";
 import { makeStyles } from "@material-ui/core";
 // import Team from "./Team";
@@ -155,9 +156,18 @@ function Home({}) {
 					<Clique />
 				</div> */}
 
+				<div id="section3" style={{ marginTop: "100px" }}>
+					<EZEChat />
+				</div>
+
 				<div id="section4" style={{ marginTop: "100px" }}>
 					<div className={classes.shade4}></div>
 					<Unique />
+				</div>
+
+				<div id="section5" style={{ marginTop: "100px" }}>
+					<div className={classes.shade4}></div>
+					<BankAccounts />
 				</div>
 			</div>
 			{/* <div id="section4">
